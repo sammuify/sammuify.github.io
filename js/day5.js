@@ -1,5 +1,6 @@
-console.log(2 + 3);
-console.log("Sammu is tired");
-document.getElementById("first").innerHTML = 2+3;
-document.getElementById("second").innerHTML += "Sammu is yawning!!";
-document.getElementById
+function add() {
+    var a = Number(document.getElementById("var_a").value);
+    var b = Number(document.getElementById("var_b").value);
+    var ans = a+b;
+    document.getElementById("result").innerHTML = ans;
+}
