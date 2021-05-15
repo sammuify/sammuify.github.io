@@ -1,16 +1,14 @@
-
-var a = 20 ;
-
-function printTableUpto20(a) {
-    document.getElementById("tables").innerHTML('TABLE OF %d', a);
-    for (var i=1; i<= 10; i++) {
-        console.log("%d X %d = %d", i, a, i*a);
+function generate_table() {
+    var num = Number(document.getElementById("var_num").value);
+    var res_div = document.getElementById("result");
+    res_div.innerHTML = "";
+    
+    var multiplier = 1;
+    while (multiplier <= 20) {
+        var result = num * multiplier;
+        res_div.innerHTML += num + " X " + multiplier + " = " + result;
+        res_div.innerHTML += "<br/>";
+        multiplier = multiplier + 1;
     }
-    // console.log();
-    // console.log();
-}
 
-for (var i=1; i<=a; i++) {
-    printTableUpto20(i);
 }
-console.log('LOL');
