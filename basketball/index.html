@@ -5,22 +5,22 @@
     <title>
         Sammuify -BasketBall-
     </title>
-    <style>
-        #gameArea {
-            background-image: url("basketball.jpg");
-            height: 950px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    </style>
+ 
 </head>
 
 <body>
-    <div id="gameArea">
-        <canvas id="gameCanvas"></canvas>
-        <div id="statsPanel"></div>
-      </div>
+    <div>
+        <span id="header_left">
+            <button onclick="goBack()">
+                Back
+            </button></span>
+        <span id="header_right">
+            SCORE:<span id="score"></span>
+        </span>
+    </div>
+    <div>
+        <img src="basketballcourt.jpg" alt="basketball-court" width="80%" height="950px">
+    </div>
 </body>
 
 </html>
