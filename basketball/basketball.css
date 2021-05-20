@@ -1,0 +1,19 @@
+.container {
+    position: relative;
+}
+
+.container .basketballcourt {
+    width: 80%;
+    height: 950px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.container .basketball {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 850px;
+    left: 1400px;
+}
