@@ -17,3 +17,18 @@
     top: 850px;
     left: 1400px;
 }
+
+
+.container .basketball.animate {
+    animation: goal;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes goal {
+    0% {top: 850px; left: 1400px;}
+    25% {}
+    50% {}
+    75% {}
+    100% {top: 220px; left: 590px;}
+}
