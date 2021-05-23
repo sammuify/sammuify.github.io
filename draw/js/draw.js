@@ -33,3 +33,18 @@ function currentSlide(n) {
     slideIndex = n;
     showSlides(slideIndex);
 }
+
+document.onkeydown = function (event) {
+    switch (event.key) {
+       case "ArrowLeft":
+          plusSlides(-1);
+          break;
+       case "ArrowUp":
+          break;
+       case "ArrowRight":
+          plusSlides(1);
+          break;
+       case "ArrowDown":
+          break;
+    }
+ };
