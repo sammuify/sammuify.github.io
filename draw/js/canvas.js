@@ -1,13 +1,16 @@
-
 window.addEventListener("load", () => {
     var canvas = document.getElementById('canvas');
     canvas.addEventListener("mousedown", startPosition);
     canvas.addEventListener("mouseup", finishPosition);
     canvas.addEventListener("mousemove", draw);
 
+    canvas.addEventListener("touchstart", startPosition, false);
+    canvas.addEventListener("touchend", finishPosition, false);
+    canvas.addEventListener("touchmove", draw, false);
+
     canvas.height = window.innerHeight - 100;
     canvas.width = window.innerWidth - 100;
-    
+
     var ctx = canvas.getContext("2d");
     ctx.lineWidth = 2;
     ctx.lineCap = "round";
@@ -27,9 +30,18 @@ window.addEventListener("load", () => {
 
     function draw(e) {
         if (!painting) return;
-  
 
-        ctx.lineTo(e.pageX, e.pageY);
+        var x, y;
+        if (e.type.startsWith("touch")) {
+            var touch = e.touches[0] || e.changedTouches[0];
+            x = touch.pageX;
+            y = touch.pageY;
+        } else {
+            x = e.clientX;
+            y = e.clientY;
+        }
+
+        ctx.lineTo(x, y);
         ctx.stroke();
 
         // ctx.beginPath();
