@@ -50,5 +50,5 @@ document.onkeydown = function (event) {
 }
 
 function showCanvas() {
-    window.location.href="canvas.html";
+    window.location.href = "canvas.html";
 }
