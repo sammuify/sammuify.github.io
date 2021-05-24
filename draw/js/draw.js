@@ -2,7 +2,7 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 function showSlides(n) {
-    var slides = document.getElementsByClassName("slides");
+    var slides = document.getElementsByClassName("slide");
     var thumbnails = document.getElementsByClassName("cursor");
     var captionText = document.getElementsByClassName("caption");
     if (n > slides.length) {
@@ -47,4 +47,8 @@ document.onkeydown = function (event) {
        case "ArrowDown":
           break;
     }
- };
+}
+
+ function showCanvas() {
+
+ }
