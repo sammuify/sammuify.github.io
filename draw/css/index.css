@@ -84,8 +84,7 @@ p.caption {
     font-size: 1.2em;
 }
 
-.draw .canvas {
+.draw #canvas {
     background-color: aliceblue;
-    width: 500px;
-    height: 500px;
+    border:1px solid #000000; 
 }
