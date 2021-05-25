@@ -22,6 +22,7 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     thumbnails[slideIndex - 1].className += " active";
     captionText[0].innerHTML = thumbnails[slideIndex - 1].alt.toUpperCase();
+    window.localStorage.setItem("selectedImage", slides[slideIndex -1].firstElementChild.src);
 }
 
 function plusSlides(n) {
