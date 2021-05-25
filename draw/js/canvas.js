@@ -13,7 +13,7 @@ canvas.width = window.innerWidth - 100;
 var ctx = canvas.getContext("2d");
 ctx.lineWidth = 2;
 ctx.lineCap = "round";
-ctx.strokeStyle = "red";
+ctx.strokeStyle = "black";
 
 var painting = false;
 
