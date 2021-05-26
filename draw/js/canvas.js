@@ -47,6 +47,10 @@ function draw(e) {
     // ctx.moveTo(e.pageX, e.pageY);
 }
 
+document.body.addEventListener('touchmove', function (event) {
+    event.preventDefault();
+ }, false);
+
 function goBack() {
     window.history.back();
 }
