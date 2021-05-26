@@ -1,0 +1,36 @@
+<!-- 
+    Day 11 - canvas page
+    Day 12 - canvas and images linked
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="css/canvas.css">
+</head>
+
+<body>
+
+    <div class="canvas-container show">
+
+        <canvas id="canvas"></canvas>
+        <div>
+            <button onclick="showResults()">done</button>
+        </div>
+    </div>
+
+    <div class="results hide">
+        <div>
+            <button onclick="goBack()">back</button>
+        </div>
+        <img id="selectedImage">
+        <img id="canvasImage">
+    </div>
+    <script src="js/canvas.js"></script>
+</body>
+
+</html>
