@@ -1,0 +1,77 @@
+<!-- 
+    Day 15 us states
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw - USA states</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="slides">
+            <div class="slide">
+                <img src="assets/california.jpg" onclick="showCanvas(event)" title="Click on the image to draw">
+            </div>
+            <div class="slide">
+                <img src="assets/texas.jpg" onclick="showCanvas(event)" title="Click on the image to draw">
+            </div>
+            <div class="slide">
+                <img src="assets/Pennsylvania.jpg" onclick="showCanvas(event)" title="Click on the image to draw">
+            </div>
+            <div class="slide">
+                <img src="assets/WA.png" onclick="showCanvas(event)" title="Click on the image to draw">
+            </div>
+            <div class="slide">
+                <img src="assets/new york.png" onclick="showCanvas(event)" title="Click on the image to draw">
+            </div>
+            <div class="slide">
+                <img src="assets/NC.jpg" onclick="showCanvas(event)" title="Click on the image to draw">
+            </div>
+            <div class="slide">
+                <img src="assets/illionoi.gif" onclick="showCanvas(event)" title="Click on the image to draw">
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">prev</a>
+        <a class="next" onclick="plusSlides(1)">next</a>
+        <div class="caption-container">
+            <p class="caption">something</p>
+        </div>
+        <div class="thumbnails">
+            <div class="column">
+                <img width="100px" src="assets/california.jpg" alt="california" class="cursor"
+                    onclick="currentSlide(1)">
+            </div>
+            <div class="column">
+                <img width="100px" src="assets/texas.jpg" alt="texas" class="cursor" onclick="currentSlide(2)">
+            </div>
+            <div class="column">
+                <img width="100px" src="assets/Pennsylvania.jpg" alt="Pennsylvania" class="cursor"
+                    onclick="currentSlide(3)">
+            </div>
+            <div class="column">
+                <img width="100px" src="assets/WA.png" alt="washington" class="cursor" onclick="currentSlide(4)">
+            </div>
+            <div class="column">
+                <img width="100px" src="assets/new york.png" alt="new york" class="cursor" onclick="currentSlide(5)">
+            </div>
+            <div class="column">
+                <img width="100px" src="assets/NC.jpg" alt="north carolina" class="cursor" onclick="currentSlide(6)">
+            </div>
+            <div class="column">
+                <img width="100px" src="assets/illionoi.gif" alt="illinois" class="cursor" onclick="currentSlide(7)">
+            </div>
+
+
+
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
